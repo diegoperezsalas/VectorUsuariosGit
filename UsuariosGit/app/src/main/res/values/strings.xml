@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">usuariosGit</string>
+    <string name="internet">No hay conexion a Internet, Por favor asegurece que el terminal este conectado a Internet</string>
+</resources>
