@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
 
-       // swipeContainer.setColorSchemeColors(android.R.color.holo_orange_dark);
+        swipeContainer.setColorSchemeResources(android.R.color.holo_orange_dark);
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews(){
-        pd = new ProgressDialog((this);
+        pd = new ProgressDialog(this);
         pd.setMessage("Mostrando usuarios GitHub en Vigo");
         pd.setCancelable(false);
         pd.show();
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onFailure(Call<ItemResponse> call, Throwable t) {
                     Log.d("Error", t.getMessage());
-                    Toast.makeText(MainActivity.this, "Error mostrando Data!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Error mostrando Datos!", Toast.LENGTH_SHORT).show();
                     Disconnected.setVisibility(View.VISIBLE);
                     pd.hide();
 
