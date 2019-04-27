@@ -5,7 +5,7 @@ android {
     buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "com.diegoperezsalas.usuariosgit"
-        minSdkVersion 25
+        minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
