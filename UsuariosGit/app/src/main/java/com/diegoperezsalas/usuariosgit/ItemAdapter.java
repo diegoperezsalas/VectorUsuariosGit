@@ -11,7 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-
+import com.diegoperezsalas.usuariosgit.controller.DetailActivity;
+import com.diegoperezsalas.usuariosgit.model.Item;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -85,7 +86,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
                     }
                 }
-            }
+            });
         }
     }
 }
