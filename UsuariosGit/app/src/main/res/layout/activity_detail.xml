@@ -1,58 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="310dp"
-    android:id="@+id/user_image_header"
-    android:fitsSystemWindows="true"
-    android:scaleType="fitXY"
-    />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/header"
-        android:layout_marginLeft="10dp"
-        android:text="Username"
-        android:textAlignment="center"
-        android:layout_marginTop="10dp"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:layout_below="@+id/user_image_header"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id = "@+id/username"
-        android:layout_marginLeft ="10dp"
-        android:layout_marginTop = "3dp"
-        android:textSize="20dp"
-        android:layout_below="@+id/header"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
 
-        />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/githublink"
-        android:layout_marginLeft="10dp"
-        android:text="Github Profile Link"
-        android:textAlignment="center"
-        android:layout_marginTop="10dp"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:layout_below="@+id/username"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/link"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="3dp"
-        android:textSize="20dp"
-        android:layout_below="@+id/githublink"
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        />
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:id="@+id/user_image_header"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/header"
+                    android:layout_marginLeft="10dp"
+                    android:text="Username"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/user_image_header"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/username"
+                    android:layout_marginLeft ="10dp"
+                    android:layout_marginTop = "3dp"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/header"
 
-</RelativeLayout>
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/githublink"
+                    android:layout_marginLeft="10dp"
+                    android:text="Github Profile Link"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/username"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/link"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/githublink"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvfullname"
+                    android:layout_marginLeft="10dp"
+                    android:text="Full name:"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/link"
+                    />
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullname"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="20dp"
+                android:layout_below="@+id/tvfullname"
+
+                />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvcompany"
+                    android:layout_marginLeft="10dp"
+                    android:text="Company:"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/fullname"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/company"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/tvcompany"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvlocation"
+                    android:layout_marginLeft="10dp"
+                    android:text="Location:"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/company"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/tvlocation"
+                    />
+
+
+
+            </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

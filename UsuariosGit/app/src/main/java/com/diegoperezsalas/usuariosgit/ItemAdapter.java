@@ -77,6 +77,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
                         intent.putExtra("login", items.get(pos).getLogin());
                         intent.putExtra("html_url", items.get(pos).getHtmlUrl());
                         intent.putExtra("avatar_url", items.get(pos).getAvatarUrl());
+                        intent.putExtra("github_user", items.get(pos).getGithubUserUrl());
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         context.startActivity(intent);
                         Toast.makeText(v.getContext(),"Usted hizo tap en:" + clickDataItem.getLogin(), Toast.LENGTH_SHORT);

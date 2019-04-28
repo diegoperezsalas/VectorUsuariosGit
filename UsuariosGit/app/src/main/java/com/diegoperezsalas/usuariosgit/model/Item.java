@@ -16,10 +16,15 @@ public class Item {
     @Expose
     private String htmlUrl;
 
-    public Item(String login, String avatarUrl,String htmlUrl){
+    @SerializedName("url")
+    @Expose
+    private String GithubUser;
+
+    public Item(String login, String avatarUrl,String htmlUrl, String GithubUser){
         this.login = login;
         this.avatarUrl = avatarUrl;
         this.htmlUrl = htmlUrl;
+        this.GithubUser = GithubUser;
 
     }
 
@@ -36,6 +41,9 @@ public class Item {
         return avatarUrl;
     }
 
+
+
+
     public void setAvatarUrl(String avatarUrl){
         this.avatarUrl = avatarUrl;
 
@@ -48,6 +56,15 @@ public class Item {
 
     public void setHtmlUrl(String htmlUrl){
         this.htmlUrl = htmlUrl;
+
+    }
+
+    public String getGithubUserUrl(){
+        return GithubUser;
+    }
+
+    public void setGithubUser(String GithubUser){
+        this.GithubUser = GithubUser;
 
     }
 }
