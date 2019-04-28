@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Log.d("pruebas","Mensaje de alcance");
         initViews();
 
         swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             Service apiService = Client.getClient().create(Service.class);
             Call<ItemResponse> call = apiService.getItems();
             call.enqueue(new Callback<ItemResponse>() {
+
                 @Override
                 public void onResponse(Call<ItemResponse> call, Response<ItemResponse> response) {
                     List<Item> items = response.body().getItems();
@@ -96,5 +97,13 @@ public class MainActivity extends AppCompatActivity {
         }catch (Exception e){Log.d("Error", e.getMessage());
          Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
         }
+
+
     }
+
 }
+
+
+
+
+
